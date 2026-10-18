@@ -4,13 +4,9 @@ connection = sqlite3.connect("./my-db.db")
 cursor = connection.cursor()
 
 sql = """
- CREATE TABLE IF NOT EXISTS user (
- userId INTEGER ,
- name VARCHAR (60),
- family VARCHAR (60),
- email VARCHAR (60)
- );
+INSERT INTO product VALUES (5,'[value-2]','[value-3]','[value-4]')
 """
+
 cursor.execute(sql)
 connection.commit()
 connection.close()
